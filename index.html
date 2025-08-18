@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aasra Dangol (Maharjan) — Portfolio</title>
+  <meta name="description" content="Portfolio of Aasra Dangol (Maharjan) — Frontend Developer" />
+
+  <!-- Simple modern Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    :root{
+      --bg:#f7f8fb; 
+      --card:#ffffff; 
+      --muted:#6b7280; 
+      --accent:#4f46e5; 
+      --glass:rgba(255,255,255,0.6);
+    }
+    *{
+      box-sizing:border-box
+    }
+    html,body{
+      height:100%
+    }
+    body{
+      font-family:Inter,system-ui,
+      -apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;
+       margin:0; background:var(--bg); 
+       color:#0f172a; 
+       -webkit-font-smoothing:antialiased;
+      }
+
+
+  </style>
+</head>
+<body>
+  <div class="container" id="page">
+    <header>
+      <div class="brand">
+        <div class="logo">AD</div>
+        <div>
+          <h1>Aasra Dangol (Maharjan)</h1>
+          <p class="lead">Frontend Developer • JavaScript — Newroad Kathmandu, Nepal</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#" id="themeToggle" title="Toggle theme">Dark Mode</a>
+      </nav>
+    </header>
+
+    <main>
+      <div>
+        <section class="card hero" id="about">
+          <div>
+            <div class="role" style="font-size: 50px;">Hello  I'm Aasra</div>
+            <h2>Welcome To My Portfolio Website </h2>
+            <p class="muted">I enjoy turning designs into functional user-friendly web apps. Current focus: JavaScript, responsive UI, and small full-stack projects with Django/Python.</p>
+            <div class="actions">
+              <a href="#projects" class="btn">View Projects</a>
+            </div>
+          </div>
+
+          <div style="margin-top:14px;">
+            <h3 style="margin:0 0 8px 0">Skills</h3>
+            <div class="skills">
+              <div class="skill">HTML</div>
+              <div class="skill">CSS</div>
+              <div class="skill">JavaScript</div>
+              <div class="skill">Java</div>
+              <div class="skill">Django</div>
+              <div class="skill">Python</div>
+              <div class="skill">MySQL</div>
+              <div class="skill">Figma</div>
+              <div class="skill">Git &amp; GitHub</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="projects" style="margin-top:18px">
+          <h2>Projects</h2>
+          <div class="projects">
+            <div class="project">
+              <strong>Basic Digital Clock</strong>
+              <p class="small muted">Frontend with simple JavaScript</p>
+              <a href="https://github.com/aashad12/Digital-Clock">View code</a>
+            </div>
+            <div class="project">
+              <strong>Help Desk Ticket UI</strong>
+              <p class="small muted">Create and manage tickets with filters & comments.</p>
+              <a href="#">View code</a>
+            </div>
+            <div class="project">
+              <strong>E‑Commerce UI Kit</strong>
+              <p class="small muted">Product grid, detail page, and cart prototype.</p>
+              <a href="#">View code</a>
+            </div>
+            <div class="project">
+              <strong>Dungeon Crawler (Text)</strong>
+              <p class="small muted">A small Python text-based game demonstrating logic and state.</p>
+              <a href="#">View code</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:18px">
+          <h2>Experience</h2>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div>
+              <strong>Frontend Intern — Student Projects / Freelance</strong>
+              <div class="small muted">2024 — Present</div>
+              <ul>
+                <li>Built responsive UIs using React and modern tooling.</li>
+                <li>Connected frontend to REST APIs and managed state.</li>
+              </ul>
+            </div>
+
+            <div>
+              <strong>Student — Islington College</strong>
+              <div class="small muted">Studied: Web Tech, OOP, Databases</div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside>
+        <div class="card">
+          <img src="./image/aasraPhoto.jpg" alt="Aasra profile" class="avatar">
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3 style="margin:0 0 8px 0">Contact</h3>
+          <div class="contact-list">
+            <div><strong>Email:</strong> <a href="mailto:aasra@example.com">aasradongol1234@gmail.com</a></div>
+            <div><strong>Phone:</strong> +977-9865543253</div>
+            <div><strong>Location:</strong> Kathmandu, Nepal</div>
+
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3 style="margin:0 0 8px 0">Quick Links</h3>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <a href="https://github.com/aashad12" class="small muted">GitHub</a>
+            <a href="https://www.linkedin.com/in/aasra-dongol-964709302/" class="small muted">LinkedIn</a>
+            <a href="./CV Aasra Dangol(Maharjan).pdf" class="small muted">CV(PDF)</a>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+  
+
+    <footer>
+      <div class="small muted">© <span id="year"></span> Aasra Dangol (Maharjan). All rights reserved.</div>
+    </footer>
+  </div>
+
+  <script>
+    // Simple interactivity: theme toggle, contact form mailto, year
+    const page = document.getElementById('page');
+    const themeToggle = document.getElementById('themeToggle');
+    const yearSpan = document.getElementById('year');
+    yearSpan.textContent = new Date().getFullYear();
+
+    // preserve theme in localStorage
+     const saved = localStorage.getItem('theme');
+  if (saved === 'dark') {
+    page.classList.add('dark');
+    document.title = "Aasra Dangol (Maharjan) — Dark Mode";
+    themeToggle.textContent = "Light Mode";
+  } else {
+    document.title = "Aasra Dangol (Maharjan) — Light Mode";
+    themeToggle.textContent = "Dark Mode";
+  }
+
+  // Toggle theme + title
+  themeToggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    page.classList.toggle('dark');
+
+    if (page.classList.contains('dark')) {
+      document.title = "Aasra Dangol (Maharjan) — Dark Mode";
+      themeToggle.textContent = "Light Mode"; // button updates too
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.title = "Aasra Dangol (Maharjan) — Light Mode";
+      themeToggle.textContent = "Dark Mode";
+      localStorage.setItem('theme', 'light');
+    }
+  });
+  </script>
+</body>
+</html>
