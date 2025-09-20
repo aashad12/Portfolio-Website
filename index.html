@@ -1,195 +1,411 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Aasra Dangol (Maharjan) — Portfolio</title>
-  <meta name="description" content="Portfolio of Aasra Dangol (Maharjan) — Frontend Developer" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Aasra Dangol (Maharjan) — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Aasra Dangol (Maharjan) — Frontend Developer"
+    />
 
-  <!-- Simple modern Google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+    <!-- Simple modern Google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
 
-  <style>
-    :root{
-      --bg:#f7f8fb; 
-      --card:#ffffff; 
-      --muted:#6b7280; 
-      --accent:#4f46e5; 
-      --glass:rgba(255,255,255,0.6);
-    }
-    *{
-      box-sizing:border-box
-    }
-    html,body{
-      height:100%
-    }
-    body{
-      font-family:Inter,system-ui,
-      -apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;
-       margin:0; background:var(--bg); 
-       color:#0f172a; 
-       -webkit-font-smoothing:antialiased;
+    <style>
+      :root {
+        --bg: #f7f8fb;
+        --card: #ffffff;
+        --muted: #6b7280;
+        --accent: #4f46e5;
+        --glass: rgba(255, 255, 255, 0.6);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial;
+        margin: 0;
+        background: var(--bg);
+        color: #0f172a;
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="page">
+      <header>
+        <div class="brand">
+          <div class="logo">AD</div>
+          <div>
+            <h1>Aasra Dangol (Maharjan)</h1>
+            <p class="lead">
+              Frontend Developer • JavaScript — Newroad Kathmandu, Nepal
+            </p>
+          </div>
+        </div>
+
+        <nav>
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="nav-links" id="navLinks">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+            <a href="#" id="themeToggle" title="Toggle theme">Dark Mode</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="main-content">
+          <section class="card hero" id="about">
+            <div class="hero-content">
+              <div class="role">Hello, I'm Aasra</div>
+              <h2 class="hero-title">Welcome To My Portfolio Website</h2>
+              <p class="hero-description">
+                I enjoy turning designs into functional user-friendly web apps.
+                Current focus: JavaScript, responsive UI, and small full-stack
+                projects with Django/Python.
+              </p>
+              <div class="actions">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn secondary">Get In Touch</a>
+              </div>
+            </div>
+
+            <div class="skills-section">
+              <h3 class="skills-title">Skills & Technologies</h3>
+              <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Java</div>
+                <div class="skill">Django</div>
+                <div class="skill">Python</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">Figma</div>
+                <div class="skill">Git &amp; GitHub</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="card" id="projects" style="margin-top: 18px">
+            <h2>Projects</h2>
+            <div class="projects">
+              <div class="project">
+                <strong>Basic Digital Clock</strong>
+                <p class="small muted">Frontend with simple JavaScript</p>
+                <a href="https://github.com/aashad12/Digital-Clock"
+                  >View code</a
+                >
+              </div>
+              <div class="project">
+                <strong>Land Rental System</strong>
+                <p class="small muted">
+                  System which makes easy to rent available land
+                </p>
+                <a href="https://github.com/aashad12/Land-Rental-System"
+                  >View code</a
+                >
+              </div>
+              <div class="project">
+                <strong>Django E-Commerce Website</strong>
+                <p class="small muted">E-commerce Website Using Django</p>
+                <a href="https://github.com/aashad12/SummerClass">View code</a>
+              </div>
+              <div class="project">
+                <strong>Teacher Management System</strong>
+                <p class="small muted">System to manage Tutor, Lecturer</p>
+                <a href="https://github.com/aashad12/Teacher-Management-System"
+                  >View code</a
+                >
+              </div>
+            </div>
+          </section>
+
+          <section class="card" style="margin-top: 18px" id="experience">
+            <h2>Experience</h2>
+            <div style="display: flex; flex-direction: column; gap: 8px">
+              <div>
+                <strong>Frontend Intern — Student Projects / Freelance</strong>
+                <div class="small muted">2024 — Present</div>
+                <ul>
+                  <li>Built responsive UIs using React and modern tooling.</li>
+                  <li>Connected frontend to REST APIs and managed state.</li>
+                </ul>
+              </div>
+
+              <div>
+                <strong>Student — Islington College</strong>
+                <div class="small muted">Studied: Web Tech, OOP, Databases</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="card" style="margin-top: 18px" id="contact">
+            <h2>Get In Touch</h2>
+            <p class="muted" style="margin-bottom: 20px">
+              I'd love to hear from you! Whether you have a project in mind,
+              want to collaborate, or just want to say hello, feel free to reach
+              out.
+            </p>
+
+            <form
+              action="https://formspree.io/f/mvgbelkb"
+              method="POST"
+              class="contact-form"
+            >
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn primary form-submit">
+                Send Message
+              </button>
+            </form>
+          </section>
+        </div>
+
+        <aside class="sidebar">
+          <div class="card">
+            <img
+              src="./image/aasraPhoto.jpg"
+              alt="Aasra profile"
+              class="avatar"
+            />
+          </div>
+
+          <div class="card" style="margin-top: 14px">
+            <h3 style="margin: 0 0 16px 0">Contact Info</h3>
+            <div class="contact-list">
+              <div class="contact-item">
+                <span class="contact-icon"
+                  ><i class="fa-solid fa-envelope"></i
+                ></span>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:aasradongol1234@gmail.com"
+                    >aasradongol1234@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon"
+                  ><i class="fa-solid fa-phone"></i
+                ></span>
+                <div>
+                  <strong>Phone</strong>
+                  <span>+977-9865543253</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon"
+                  ><i class="fa-solid fa-location-dot"></i
+                ></span>
+                <div>
+                  <strong>Location</strong>
+                  <span>Kathmandu, Nepal</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top: 14px">
+            <h3 style="margin: 0 0 8px 0">Quick Links</h3>
+            <div style="display: flex; flex-direction: column; gap: 8px">
+              <a
+                target="_blank"
+                href="https://github.com/aashad12"
+                class="small muted"
+                >GitHub</a
+              >
+              <a
+                href="https://www.linkedin.com/in/aasra-dongol-964709302/"
+                class="small muted"
+                target="_blank"
+                >LinkedIn</a
+              >
+              <a href="./CV Aasra Dangol(Maharjan).pdf" class="small muted"
+                >CV(PDF)</a
+              >
+            </div>
+          </div>
+        </aside>
+      </main>
+      <footer>
+        <div class="small muted">
+          © <span id="year"></span> Aasra Dangol (Maharjan). All rights
+          reserved.
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Simple interactivity: theme toggle, contact form mailto, year
+      const page = document.getElementById("page");
+      const themeToggle = document.getElementById("themeToggle");
+      const yearSpan = document.getElementById("year");
+      yearSpan.textContent = new Date().getFullYear();
+
+      // preserve theme in localStorage
+      const saved = localStorage.getItem("theme");
+      if (saved === "dark") {
+        page.classList.add("dark");
+        document.title = "Aasra Dangol (Maharjan) — Dark Mode";
+        themeToggle.textContent = "Light Mode";
+      } else {
+        document.title = "Aasra Dangol (Maharjan) — Light Mode";
+        themeToggle.textContent = "Dark Mode";
       }
 
+      // Toggle theme + title
+      themeToggle.addEventListener("click", (e) => {
+        e.preventDefault();
+        page.classList.toggle("dark");
 
-  </style>
-</head>
-<body>
-  <div class="container" id="page">
-    <header>
-      <div class="brand">
-        <div class="logo">AD</div>
-        <div>
-          <h1>Aasra Dangol (Maharjan)</h1>
-          <p class="lead">Frontend Developer • JavaScript — Newroad Kathmandu, Nepal</p>
-        </div>
-      </div>
+        if (page.classList.contains("dark")) {
+          document.title = "Aasra Dangol (Maharjan) — Dark Mode";
+          themeToggle.textContent = "Light Mode"; // button updates too
+          localStorage.setItem("theme", "dark");
+        } else {
+          document.title = "Aasra Dangol (Maharjan) — Light Mode";
+          themeToggle.textContent = "Dark Mode";
+          localStorage.setItem("theme", "light");
+        }
+      });
 
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#" id="themeToggle" title="Toggle theme">Dark Mode</a>
-      </nav>
-    </header>
+      // Enhanced smooth scrolling for navigation links
+      document.querySelectorAll('nav a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
 
-    <main>
-      <div>
-        <section class="card hero" id="about">
-          <div>
-            <div class="role" style="font-size: 50px;">Hello  I'm Aasra</div>
-            <h2>Welcome To My Portfolio Website </h2>
-            <p class="muted">I enjoy turning designs into functional user-friendly web apps. Current focus: JavaScript, responsive UI, and small full-stack projects with Django/Python.</p>
-            <div class="actions">
-              <a href="#projects" class="btn">View Projects</a>
-            </div>
-          </div>
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
 
-          <div style="margin-top:14px;">
-            <h3 style="margin:0 0 8px 0">Skills</h3>
-            <div class="skills">
-              <div class="skill">HTML</div>
-              <div class="skill">CSS</div>
-              <div class="skill">JavaScript</div>
-              <div class="skill">Java</div>
-              <div class="skill">Django</div>
-              <div class="skill">Python</div>
-              <div class="skill">MySQL</div>
-              <div class="skill">Figma</div>
-              <div class="skill">Git &amp; GitHub</div>
-            </div>
-          </div>
-        </section>
+          if (targetElement) {
+            // Add visual feedback to clicked link
+            document.querySelectorAll("nav a").forEach((link) => {
+              link.classList.remove("active");
+            });
+            this.classList.add("active");
 
-        <section class="card" id="projects" style="margin-top:18px">
-          <h2>Projects</h2>
-          <div class="projects">
-            <div class="project">
-              <strong>Basic Digital Clock</strong>
-              <p class="small muted">Frontend with simple JavaScript</p>
-              <a href="https://github.com/aashad12/Digital-Clock">View code</a>
-            </div>
-            <div class="project">
-              <strong>Land Rental System</strong>
-              <p class="small muted">System which makes easy to rent available land</p>
-              <a href="https://github.com/aashad12/Land-Rental-System">View code</a>
-            </div>
-            <div class="project">
-              <strong>Django E-Commerce Website</strong>
-              <p class="small muted">E-commerce Website Using Django</p>
-              <a href="https://github.com/aashad12/SummerClass">View code</a>
-            </div>
-            <div class="project">
-              <strong>Teacher Management System</strong>
-              <p class="small muted">System to manage Tutor, Lecturer</p>
-              <a href="https://github.com/aashad12/Teacher-Management-System">View code</a>
-            </div>
-          </div>
-        </section>
+            // Custom smooth scroll with offset for header
+            const headerHeight = 100; // Adjust based on your header height
+            const targetPosition = targetElement.offsetTop - headerHeight;
 
-        <section class="card" style="margin-top:18px">
-          <h2>Experience</h2>
-          <div style="display:flex;flex-direction:column;gap:8px">
-            <div>
-              <strong>Frontend Intern — Student Projects / Freelance</strong>
-              <div class="small muted">2024 — Present</div>
-              <ul>
-                <li>Built responsive UIs using React and modern tooling.</li>
-                <li>Connected frontend to REST APIs and managed state.</li>
-              </ul>
-            </div>
+            window.scrollTo({
+              top: targetPosition,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
 
-            <div>
-              <strong>Student — Islington College</strong>
-              <div class="small muted">Studied: Web Tech, OOP, Databases</div>
-            </div>
-          </div>
-        </section>
-      </div>
+      // Active navigation link highlighting based on scroll position
+      window.addEventListener("scroll", () => {
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll('nav a[href^="#"]');
 
-      <aside>
-        <div class="card">
-          <img src="./image/aasraPhoto.jpg" alt="Aasra profile" class="avatar">
-        </div>
+        let currentSection = "";
 
-        <div class="card" style="margin-top:14px">
-          <h3 style="margin:0 0 8px 0">Contact</h3>
-          <div class="contact-list">
-            <div><strong>Email:</strong> <a href="mailto:aasra@example.com">aasradongol1234@gmail.com</a></div>
-            <div><strong>Phone:</strong> +977-9865543253</div>
-            <div><strong>Location:</strong> Kathmandu, Nepal</div>
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 150;
+          const sectionHeight = section.clientHeight;
 
-          </div>
-        </div>
+          if (
+            window.scrollY >= sectionTop &&
+            window.scrollY < sectionTop + sectionHeight
+          ) {
+            currentSection = section.getAttribute("id");
+          }
+        });
 
-        <div class="card" style="margin-top:14px">
-          <h3 style="margin:0 0 8px 0">Quick Links</h3>
-          <div style="display:flex;flex-direction:column;gap:8px">
-            <a href="https://github.com/aashad12" class="small muted">GitHub</a>
-            <a href="https://www.linkedin.com/in/aasra-dongol-964709302/" class="small muted">LinkedIn</a>
-            <a href="./CV Aasra Dangol(Maharjan).pdf" class="small muted">CV(PDF)</a>
-          </div>
-        </div>
-      </aside>
-    </main>
-    <footer>
-      <div class="small muted">© <span id="year"></span> Aasra Dangol (Maharjan). All rights reserved.</div>
-    </footer>
-  </div>
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${currentSection}`) {
+            link.classList.add("active");
+          }
+        });
+      });
 
-  <script>
-    // Simple interactivity: theme toggle, contact form mailto, year
-    const page = document.getElementById('page');
-    const themeToggle = document.getElementById('themeToggle');
-    const yearSpan = document.getElementById('year');
-    yearSpan.textContent = new Date().getFullYear();
+      // Mobile menu toggle
+      const mobileMenuToggle = document.getElementById("mobileMenuToggle");
+      const navLinksElement = document.getElementById("navLinks");
 
-    // preserve theme in localStorage
-     const saved = localStorage.getItem('theme');
-  if (saved === 'dark') {
-    page.classList.add('dark');
-    document.title = "Aasra Dangol (Maharjan) — Dark Mode";
-    themeToggle.textContent = "Light Mode";
-  } else {
-    document.title = "Aasra Dangol (Maharjan) — Light Mode";
-    themeToggle.textContent = "Dark Mode";
-  }
+      mobileMenuToggle.addEventListener("click", () => {
+        navLinksElement.classList.toggle("mobile-open");
 
-  // Toggle theme + title
-  themeToggle.addEventListener('click', (e) => {
-    e.preventDefault();
-    page.classList.toggle('dark');
+        // Toggle icon
+        const icon = mobileMenuToggle.querySelector("i");
+        if (navLinksElement.classList.contains("mobile-open")) {
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-times");
+        } else {
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
+        }
+      });
 
-    if (page.classList.contains('dark')) {
-      document.title = "Aasra Dangol (Maharjan) — Dark Mode";
-      themeToggle.textContent = "Light Mode"; // button updates too
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.title = "Aasra Dangol (Maharjan) — Light Mode";
-      themeToggle.textContent = "Dark Mode";
-      localStorage.setItem('theme', 'light');
-    }
-  });
-  </script>
-</body>
+      // Close mobile menu when clicking on nav links
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinksElement.classList.remove("mobile-open");
+          const icon = mobileMenuToggle.querySelector("i");
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
+        });
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (!e.target.closest("nav")) {
+          navLinksElement.classList.remove("mobile-open");
+          const icon = mobileMenuToggle.querySelector("i");
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
+        }
+      });
+    </script>
+  </body>
 </html>
